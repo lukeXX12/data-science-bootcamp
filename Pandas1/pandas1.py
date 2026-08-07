@@ -123,3 +123,33 @@ df =pd.read_csv("Pandas1/employees.csv")
 # df["NewSalary"]  = (df["Salary"] * 1.1).astype(int)
 
 # df.to_csv("Pandas1/employees_updated.csv", index=False)
+
+
+AverageIT = df[df["Department"] == "IT"]["Salary"].mean()
+print(AverageIT)
+
+averageHR = df[df["Department"] == "HR"]["Salary"].mean()
+print(averageHR)
+
+averageFinance = df[df["Department"] == "Finance"]["Salary"].mean()
+print(averageFinance)
+
+maxavg = max(AverageIT, averageHR, averageFinance)
+print(maxavg)
+#Stupid way of doing easy job
+
+
+
+# this is easier
+
+
+avg_salaries = df.groupby("Department")["Salary"].mean()
+max_dept = avg_salaries.idxmax()
+max_avgsalary = avg_salaries.max()
+print(f"Department With max avg Salary: {max_dept}(${max_avgsalary:,.2f})")
+
+
+#sorted 
+rankedDepartments = df.groupby('Department')['Salary'].mean().sort_values(ascending=False)
+
+print(rankedDepartments)
