@@ -31,3 +31,8 @@ for this day, i exercised more in mumpy library and get known to basic statistic
   later printed out increased salaries with different options)
 - open CSV file and read data
 - write new data in txt
+
+## pandas workout
+
+- i have worked with some of the important pandas statistic methods
+- discovered DataFRame
