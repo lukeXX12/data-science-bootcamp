@@ -34,5 +34,20 @@ for this day, i exercised more in mumpy library and get known to basic statistic
 
 ## pandas workout
 
-- i have worked with some of the important pandas statistic methods
+### i have worked with :
+
+- read_csv()
+- head()
+- tail()
+- info()
+- describe()
+- iloc[]
+- filtering
+- sort_values()
+- groupby()
+- mean()
+- sum()
+- count()
+- agg()
+- idxmax()
 - discovered DataFRame

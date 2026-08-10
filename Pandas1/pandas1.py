@@ -125,31 +125,46 @@ df =pd.read_csv("Pandas1/employees.csv")
 # df.to_csv("Pandas1/employees_updated.csv", index=False)
 
 
-AverageIT = df[df["Department"] == "IT"]["Salary"].mean()
-print(AverageIT)
+# AverageIT = df[df["Department"] == "IT"]["Salary"].mean()
+# print(AverageIT)
 
-averageHR = df[df["Department"] == "HR"]["Salary"].mean()
-print(averageHR)
+# averageHR = df[df["Department"] == "HR"]["Salary"].mean()
+# print(averageHR)
 
-averageFinance = df[df["Department"] == "Finance"]["Salary"].mean()
-print(averageFinance)
+# averageFinance = df[df["Department"] == "Finance"]["Salary"].mean()
+# print(averageFinance)
 
-maxavg = max(AverageIT, averageHR, averageFinance)
-print(maxavg)
-#Stupid way of doing easy job
-
-
-
-# this is easier
+# maxavg = max(AverageIT, averageHR, averageFinance)
+# print(maxavg)
+# #Stupid way of doing easy job
 
 
-avg_salaries = df.groupby("Department")["Salary"].mean()
-max_dept = avg_salaries.idxmax()
-max_avgsalary = avg_salaries.max()
-print(f"Department With max avg Salary: {max_dept}(${max_avgsalary:,.2f})")
+
+# # this is easier
 
 
-#sorted 
-rankedDepartments = df.groupby('Department')['Salary'].mean().sort_values(ascending=False)
+# avg_salaries = df.groupby("Department")["Salary"].mean()
+# max_dept = avg_salaries.idxmax()
+# max_avgsalary = avg_salaries.max()
+# print(f"Department With max avg Salary: {max_dept}(${max_avgsalary:,.2f})")
 
-print(rankedDepartments)
+
+# #sorted 
+# rankedDepartments = df.groupby('Department')['Salary'].mean().sort_values(ascending=False)
+
+# print(rankedDepartments)
+
+# total_payroll_by_Dep = df.groupby("Department")["Salary"].sum().sort_values(ascending=False)
+# print(total_payroll_by_Dep)
+# import numpy as np
+# df =pd.DataFrame(
+#     [[1,2,3 ],[4,5,6],[7,8,9], [np.nan, np.nan, np.nan]],
+#     columns=["A","B","C"]
+# )
+
+# print(df.agg(["sum", "min"]))
+
+
+#Bonus task for .agg
+
+print(df.groupby("Department")["Salary"].agg(["mean", "count"]))
