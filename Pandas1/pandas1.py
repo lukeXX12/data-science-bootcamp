@@ -167,4 +167,15 @@ df =pd.read_csv("Pandas1/employees.csv")
 
 #Bonus task for .agg
 
-print(df.groupby("Department")["Salary"].agg(["mean", "count"]))
+
+#print(df.groupby("Department")["Salary"].agg(["mean", "count","sum"]))
+
+# summary of average salaries and employees count by department + filtering departments which have less than 3000  average salary
+summary = df.groupby("Department")["Salary"].agg(
+    average_salary = "mean",
+    employee_count="count",
+    total_payroll ="sum"
+)
+summary = summary[summary['average_salary']> 3000]
+summary = summary.sort_values("average_salary" , ascending = False)
+print(summary)
