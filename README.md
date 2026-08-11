@@ -34,6 +34,8 @@ for this day, i exercised more in mumpy library and get known to basic statistic
 
 ## pandas workout
 
+pandas is funny to play with. it turned out, that pandas is useful with Dataframes. i look forward to do more tasks with it <3
+
 ### i have worked with :
 
 - read_csv()
@@ -50,4 +52,5 @@ for this day, i exercised more in mumpy library and get known to basic statistic
 - count()
 - agg()
 - idxmax()
-- discovered DataFRame
+- discovered DataFrame
+- Filtering after aggregation
