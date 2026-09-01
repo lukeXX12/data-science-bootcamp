@@ -1,0 +1,13 @@
+Name,Department,Age,Salary,City
+Ana,HR,24,2200,Tbilisi
+Giorgi,IT,31,4100,Tbilisi
+Nino,Finance,29,2800,Batumi
+Luka,IT,,3200,Tbilisi
+Mariam,HR,26,,Kutaisi
+Dato,Finance,35,5000,Batumi
+Saba,IT,22,2900,tbilisi
+Ana,HR,24,2200,Tbilisi
+Giga,IT,-5,3500,Tbilisi
+Tamar,Finance,abc,3100,Batumi
+Nika,IT,28,"3,800",Tbilisi
+Elene,,27,2600,Kutaisi

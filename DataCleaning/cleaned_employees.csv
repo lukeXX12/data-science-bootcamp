@@ -1,0 +1,9 @@
+Name,Department,Age,Salary,City,AnnualSalary,SalaryCategory
+Ana,HR,24.0,2200,Tbilisi,26400,Low
+Giorgi,IT,31.0,4100,Tbilisi,49200,High
+Nino,Finance,29.0,2800,Batumi,33600,Meddium
+Mariam,HR,26.0,2850,Kutaisi,34200,Meddium
+Dato,Finance,35.0,5000,Batumi,60000,High
+Saba,IT,22.0,2900,Tbilisi,34800,Meddium
+Nika,IT,28.0,2850,Tbilisi,34200,Meddium
+Elene,Unknown,27.0,2600,Kutaisi,31200,Meddium

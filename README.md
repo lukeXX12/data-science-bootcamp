@@ -32,11 +32,11 @@ for this day, i exercised more in mumpy library and get known to basic statistic
 - open CSV file and read data
 - write new data in txt
 
-## pandas workout
+### pandas workout --
 
 pandas is funny to play with. it turned out, that pandas is useful with Dataframes. i look forward to do more tasks with it <3
 
-### i have worked with :
+#### i have worked with :
 
 - read_csv()
 - head()
